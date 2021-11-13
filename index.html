@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sneakers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="headerContainer">
+			<div class="menuImg">
+				<img src="ressources/iconMenu.svg" alt="menu" onclick="openMenu()">
+			</div>
+			<div class="title">
+				Sneakers
+			</div>
+			<div class="collectionsTopMenu hoverUnderLine">
+				Collections
+			</div>
+			<div class="menTopMenu hoverUnderLine">
+				Men
+			</div>
+			<div class="womenTopMenu hoverUnderLine">
+				Women
+			</div>
+			<div class="aboutTopMenu hoverUnderLine">
+				About
+			</div>
+			<div class="contactTopMenu hoverUnderLine">
+				Contact
+			</div>
+			<div class="cardImg">
+				<img src="ressources/iconCart.svg">
+			</div>
+			<div class="iconImg">
+				<img src="ressources/imageAvatar.png">
+			</div>
+		</div>
+		<div id="topSlider">
+			<div class="firstImage" id="firstImage">
+				<img src="ressources/product/imageProduct1.jpg">
+			</div>
+			<div class="secondImage" id="secondImage">
+				<img src="ressources/product/imageProduct2.jpg">
+			</div>
+		</div>
+		<div class="nextImage">
+			<img src="ressources/iconNext.svg" onclick="nextImage()">
+		</div>
+		<div class="previousImage">
+			<img src="ressources/iconPrevious.svg" onclick="previousImage()">
+		</div>
+		<div class="info">
+			<div class="companyName">
+				sneaker company
+			</div>
+		</div>
+		<div class="subTitle">
+			Fall Limited Edition Sneakers
+		</div>
+		<div class="info">
+			These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole.
+		</div>
+		<div class="price">
+			<div class="realPrice">$125.00</div>
+			<div class="fakePrice">$250.00</div>
+		</div>
+		<div class="addToCard" onclick="addToCart()">
+			<div class="addToCardButton">
+				<img src="ressources/iconCart.svg">
+				Add to cart
+			</div>
+		</div>
+	</div>
+	<div id="menu">
+		<div class="closeButton">
+			<img src="ressources/iconClose.svg" onclick="closeMenu()">
+		</div>
+		<div class="collections">
+			<h1>Collections</h1>
+		</div>
+		<div class="men">
+			<h1>Men</h1>
+		</div>
+		<div class="women">
+			<h1>Women</h1>
+		</div>
+		<div class="about">
+			<h1>About</h1>
+		</div>
+		<div class="contact">
+			<h1>Contact</h1>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#firstImage").show();
+		$("#secondImage").hide();
+		$("#menu").hide();
+		let numberToCart = 0;
+		function openMenu(){
+			$("#app").hide();
+			$("#menu").show();
+		}
+		function closeMenu(){
+			$("#menu").hide();
+			$("#app").show();
+		}
+		function nextImage(){
+			$("#secondImage").show();
+			$("#firstImage").hide();
+		}
+		function previousImage(){
+			$("#firstImage").show();
+			$("#secondImage").hide();
+		}
+		function addToCart(){
+			numberToCart += 1;
+			console.log("You have " + numberToCart + "in your cart");
+			window.alert("You have " + numberToCart + " in your cart");
+		}
+	</script>
+</body>
+</html>

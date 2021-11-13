@@ -1,0 +1,261 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.displayInline{
+	display: inline;
+}
+@media (max-width: 1000px){
+	.headerContainer{
+		position: relative;
+		height: 150px;
+		width: 100%;
+		border: 1px solid #fff;
+		background: #fff;
+	}
+	.menuImg{
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+	.menuImg img{
+		width: 70px;
+	}
+	.title{
+		position: absolute;
+		top: 40px;
+		left: 150px;
+		font-size: 5em;
+		font-weight: bold;
+	}
+	.cardImg{
+		position: absolute;
+		top: 50px;
+		left: 790px;
+	}
+	.cardImg img{
+		width: 70px;
+	}
+	.iconImg{
+		position: absolute;
+		top: 20px;
+		left: 890px;
+	}
+	#topSlider{
+		position: relative;
+	}
+	.nextImage{
+		position: absolute;
+		top: 500px;
+		left: 90%;
+	}
+	.nextImage img{
+		width: 100px;
+	}
+	.previousImage{
+		position: absolute;
+		top: 500px;
+		left: 2%;
+	}
+	.previousImage img{
+		width: 100px;
+	}
+	.info{
+		padding-left: 7%;
+		padding-top: 7%;
+	}
+	.companyName{
+		text-transform: uppercase;
+		color: hsl(26, 100%, 55%);
+		font-size: 2em;
+		font-weight: bold;
+	}
+	.subTitle{
+		padding-left: 7%;
+		font-weight: bold;
+		font-size: 5em;
+		color: #000;
+	}
+	.info{
+		color: hsl(219, 9%, 45%);
+	}
+	.realPrice{
+		color: #000;
+		padding-left: 7%;
+		padding-top: 7%;
+		font-size: 5em;
+		font-weight: bold;
+	}
+	.fakePrice{
+		color: grey;
+		text-decoration: line-through;
+		padding-left: 7%;
+		padding-top: 1%;
+	}
+	.addToCard{
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+	}
+	.addToCardButton img{
+		width: 70px;
+	}
+	.addToCardButton{
+		background: hsl(26, 100%, 55%);
+		border-radius: 50px;
+		width: 85%;
+		text-align: center;
+		font-size: 5em;
+		color: #fff;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.closeButton{
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+	.closeButton img{
+		width: 80px;
+	}
+	.collections, .men, .women, .about, .contact{
+		font-size: 5em;
+		position: absolute;
+		left: 50px;
+		animation-name: arriveDuTexte;
+		animation-duration: 1s;
+	}
+	.collections{
+		top: 150px;
+	}
+	.men{
+		top: 350px;
+	}
+	.women{
+		top: 550px;
+	}
+	.about{
+		top: 750px;
+	}
+	.contact{
+		top: 950px;
+	}
+	@keyframes arriveDuTexte{
+		from{
+			padding-left: 1000px;
+		}
+		to{
+			padding-left: 0px;
+		}
+	}
+	.collectionsTopMenu, .menTopMenu, .womenTopMenu, .aboutTopMenu, .contactTopMenu{
+		display: none;
+	}
+}
+@media (min-width: 1000px){
+	.headerContainer{
+		padding-top: 20px;
+		text-align: center;
+		border-bottom: 2px solid grey;
+	}
+	.menuImg{
+		display: none;
+	}
+	.title{
+		font-size: 2.5em;
+		font-weight: bold;
+		display: inline-flex;
+		padding-right: 50px;
+	}
+	.collectionsTopMenu, .menTopMenu, .womenTopMenu, .aboutTopMenu, .contactTopMenu{
+		display: inline-flex;
+		font-size: 1.5em;
+		padding-right: 10px;
+		cursor: pointer;
+	}
+	.cardImg{
+		padding-left: 40px;
+		display: inline-flex;
+	}
+	.cardImg img{
+		cursor: pointer;
+	}
+	.iconImg{
+		display: inline-flex;
+		padding-left: 30px;
+	}
+	.iconImg img{
+		width: 50%;
+		cursor: pointer;
+	}
+	.hoverUnderLine:hover{
+		text-decoration: underline;
+	}
+	#topSlider{
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		position: relative;
+	}
+	.nextImage{
+		position: absolute;
+		top: 70%;
+		left: 90%;
+	}
+	.nextImage img, .previousImage img{
+		width: 50px;
+		cursor: pointer;
+	}
+	.previousImage{
+		position: absolute;
+		top: 70%;
+		left: 6%;
+	}
+	.companyName{
+		padding-top: 10px;
+		font-size: 1.5em;
+		color: hsl(26, 100%, 55%);
+	}
+	.subTitle{
+		font-size: 5em;
+		font-weight: bold;
+		padding-left: 12.5%;
+		width: 80%;
+	}
+	.info{
+		padding-left: 13%;
+		color: hsl(219, 9%, 45%);
+	}
+	.price{
+		padding-left: 13%;
+	}
+	.realPrice{
+		font-size: 5em;
+	}
+	.fakePrice{
+		font-size: 1.5em;
+		text-decoration: line-through;
+		color: grey;
+	}
+	.addToCard{
+		padding-top: 10px;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 10px;
+	}
+	.addToCardButton{
+		font-size: 2em;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 50%;
+		border-radius: 50px;
+		background: hsl(26, 100%, 55%);
+		display: flex;
+		color: #fff;
+		justify-content: center;
+	}
+	.addToCardButton img{
+		width: 5%;
+	}
+}
